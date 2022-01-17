@@ -1,0 +1,71 @@
+html {
+    font-family: Arial;
+    background-color: #f7f7f7;
+}
+
+p {
+    font-size: 20px;
+}
+
+.botao {
+    /* text */
+    color:white;
+    text-decoration: none;
+
+    /* background */
+    background-color: #ee2211;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+}
+
+.menu a {
+    background-color: white;
+    padding: 10px 20px;
+    margin: 0px;
+    
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px;
+    background-color: white;
+}
+
+.item_caracteristica {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    
+}
+.item_caracteristica p {
+    grid-column: 2/3;
+}
+.item_caracteristica h3 {
+    grid-column: 2/3;
+}
+
+.item_caracteristica img {
+    align-self: center;
+    justify-self: center;
+}
+
+/* .item_caracteristica img {
+    grid-column: 1/2;
+} */
+
+.bike {
+    width: 400px;
+}
+
+.vantagens {
+    color: #c6c6c6;
+    font-size: 64px;
+    background-color: #f7f7f7;
+}
