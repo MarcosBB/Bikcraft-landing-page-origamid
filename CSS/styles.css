@@ -18,6 +18,9 @@ h1, h2, h3, p {
     margin:0px
 }
 
+a {
+    color: black;
+}
 
 p {
     font-size: 1.25rem;
@@ -48,6 +51,7 @@ p {
 
 .menu a {
     display: block;
+    color: black;
     background-color: white;
     padding: 10px 20px;
     margin: 0px;
