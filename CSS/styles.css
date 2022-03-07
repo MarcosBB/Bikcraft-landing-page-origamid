@@ -8,23 +8,10 @@ body {
     margin-top: 60px;
 }
 
-ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-h1, h2, h3, p {
-    margin:0px
-}
-
-a {
-    color: black;
-}
-
 p {
     font-size: 1.25rem;
     line-height: 1.3;
+    max-width: 60ch;
 }
 
 .botao {
@@ -46,7 +33,7 @@ p {
 .header {
     display: grid;
     justify-items: center;
-    gap: 60px;
+    gap: 50px;
 }
 
 .menu a {
@@ -79,13 +66,13 @@ p {
     background-color: white;
 }
 
-.grid h1 {
+.apresentação h1 {
     font-size: 2rem;
 }
 
 
 .caracteristicas, .apresentacao, .vantagens {
-    padding:40px;
+    padding: 40px;
 }
 
 .apresentacao {
@@ -149,6 +136,8 @@ p {
 .bike {
     max-width: 100%;
     display: block;
+    object-fit: cover;
+    height: 100%;
 }
 
 .rodape {
@@ -157,4 +146,56 @@ p {
     padding: 40px;
     width: 100%;
     box-sizing: border-box;
+}
+
+/* Responsividade  */
+@media (max-width: 960px) {
+    .vantagens {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .apresentacao::before {
+        content: none;
+    }
+
+
+    .apresentacao {
+        justify-items: left;
+        text-align: left;
+    }
+
+    .vantagens {
+        text-align: center;
+    }
+
+    .bike {
+        max-height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .header {
+        gap: 20px;
+    }
+
+    .rodape {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 391px) {
+    .vantagens {
+        font-size: 2rem;
+    }
 }
