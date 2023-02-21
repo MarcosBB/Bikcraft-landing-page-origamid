@@ -7,7 +7,7 @@
 ### **Como a página deve ficar**
 ![image](https://user-images.githubusercontent.com/50207805/149822454-b252cdc3-11ac-4c26-ae35-4b9767b18f29.png)
 ![image](https://user-images.githubusercontent.com/50207805/220397394-25f9381e-b183-40fd-94cb-1f06511ead78.png)
-✨
+
 ### **Formatação**
 ```
  # Cores
