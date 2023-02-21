@@ -1,7 +1,29 @@
+:root {
+    --cor-primaria: #ee2211;
+    --cor-primaria-escura: #900;
+    --fundo-1: #f7f7f7;
+    --fundo-2: #ffffff;
+    --texto: #000000;
+    --subtitulo: rgba(0, 0, 0, 0.2);
+    --onda: url("/img/onda-clara.svg");
+    --bortao: #ffffff;
+    
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --fundo-1: #111111;
+        --fundo-2: #000000;
+        --texto: #ffffff;
+        --subtitulo: rgba(255, 255, 255, 0.2);
+        --onda: url("/img/onda-escura.svg");
+    }
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
-    background-color: #f7f7f7;
+    background-color: var(--fundo-1);
     display: grid;
     gap: 60px;
     justify-items: center;
@@ -16,18 +38,18 @@ p {
 
 .botao {
     /* text */
-    color:white;
+    color: var(--bortao);
     text-decoration: none;
     text-transform: uppercase;
 
     /* background */
-    background-color: #ee2211;
+    background-color: var(--cor-primaria);
     padding: 0.938rem 1.875rem;
     border-radius: 4px;
 }
 
 .botao:hover{
-    background: #900;
+    background: var(--cor-primaria-escura);
 }
 
 .header {
@@ -38,8 +60,8 @@ p {
 
 .menu a {
     display: block;
-    color: black;
-    background-color: white;
+    color: var(--texto);
+    background-color: var(--fundo-2);
     padding: 10px 20px;
     margin: 0px;
     text-decoration: none;
@@ -49,7 +71,7 @@ p {
 }
 
 .menu a:hover {
-    border-color: #ee2211;
+    border-color: var(--cor-primaria);
 }
 
 .menu {
@@ -63,7 +85,7 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 1000px;
-    background-color: white;
+    background-color: var(--fundo-2);
 }
 
 .apresentação h1 {
@@ -76,6 +98,7 @@ p {
 }
 
 .apresentacao {
+    color: var(--texto);
     display: grid;
     justify-items: end;
     gap: 20px;
@@ -88,24 +111,25 @@ p {
     content: "";
     width: 60px;
     height: 4px;
-    background-color: #ee2211;
+    background-color: var(--cor-primaria);
     position: absolute;
     top: 30px;
     right: -30px;
 }
 
 .vantagens {
-    color: #c6c6c6;
+    color: var(--subtitulo);
     font-size: 4rem;
-    background-color: #f7f7f7;
+    background-color: var(--fundo-1);
     display: grid;
     align-content: center;
     text-align: right;
     text-transform: uppercase;
-    background-image: url("/img/onda.svg");
+    background-image: var(--onda);
 }
 
 .item_caracteristica {
+    color: var(--texto);
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 10px 20px;
@@ -126,11 +150,11 @@ p {
 }
 
 .item_caracteristica:hover {
-    border-color: #ee2211;
+    border-color: var(--cor-primaria);
 }
 
 .item_caracteristica:nth-child(odd) {
-    background-color: #f7f7f7;
+    background-color: var(--fundo-1);
 }
 
 .bike {
@@ -141,11 +165,12 @@ p {
 }
 
 .rodape {
-    background-color: white;
+    background-color: var(--fundo-2);
     text-align: center;
     padding: 40px;
     width: 100%;
     box-sizing: border-box;
+    color: var(--texto);
 }
 
 /* Responsividade  */
