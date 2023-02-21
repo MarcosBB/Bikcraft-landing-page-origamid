@@ -1,6 +1,6 @@
 # Bikecraft landing page
 
-É um projeto feito no curso `HTML e CSS para iniciantes` da [Origamid](https://www.origamid.com/) para exercitar os conceitos de posicionamento, semântica, pseudo classes, pseudo elementos e responsividade.
+É um projeto feito no curso `HTML e CSS para iniciantes` da [Origamid](https://www.origamid.com/) para exercitar os conceitos de posicionamento, semântica, pseudo classes, pseudo elementos, responsividade e etc.
 
 🚀 [**ACESSE AQUI**](https://marcosbb.github.io/Bikecraft-landing-page-origamid/) 🚀
 ## **Requisitos do professor**
